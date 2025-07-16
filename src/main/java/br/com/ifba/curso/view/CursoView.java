@@ -430,7 +430,7 @@ System.out.println("Texto buscado: " + texto);
 
     private void btnAdcionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdcionarActionPerformed
    try {
-        String nome = JOptionPane.showInputDialog(this, "Nome do Curso:");
+        String nome = JOptionPane.showInputDialog(this, "Nome do Curso: ");
         if (nome == null || nome.trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "O nome do curso é obrigatório.", "Aviso", JOptionPane.WARNING_MESSAGE);
             return;
@@ -481,7 +481,7 @@ System.out.println("Texto buscado: " + texto);
         });
         
 
-        JOptionPane.showMessageDialog(this, "Curso salvo com sucesso!", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Parabens!! Curso salvo com sucesso!", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
 
     } catch (Exception ex) {
         ex.printStackTrace();
