@@ -6,49 +6,33 @@ package br.com.ifba.curso.view;
 
 
 import javax.swing.JTable;
-import javax.swing.JButton;
-import javax.swing.JTextField;
-import javax.swing.JPanel; // Se ainda não tiver
-import javax.swing.JScrollPane; // Se ainda não tiver
 import javax.swing.JLabel; // Se ainda não tiver
 import javax.swing.JOptionPane; // Se ainda não tiver
-import javax.swing.UIManager; // Para LookAndFeel e cores padrão
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
 import br.com.ifba.curso.entity.Curso;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import br.com.ifba.infrastructure.util.SpringContext;
 
 
 
 
 import javax.swing.table.DefaultTableModel; // Para o modelo da tabela
-import javax.swing.table.TableCellRenderer; // Para o renderizador de botão
-import javax.swing.DefaultCellEditor; // Para o editor de botão
 
 import java.awt.Component; // Para ButtonRenderer/Editor
-import java.awt.Color;     // Para cores
-import java.awt.Font;      // Para fontes
-import java.awt.Cursor;    // Para cursor de mão
-import java.awt.GridBagConstraints;
 
 import java.awt.Dimension;
-import javax.swing.table.JTableHeader;
 import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.SwingConstants;
 import javax.swing.*;
-import javax.swing.border.*;
 import javax.swing.table.*;
-import java.awt.*;
+
 import java.awt.event.*;
 import br.com.ifba.curso.controller.CursoController;
 import br.com.ifba.SpringBootCursoApplication;
-import br.com.ifba.curso.service.CursoService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 
 
+@Slf4j
 
 
 

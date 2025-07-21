@@ -28,6 +28,14 @@
     </properties>
 
     <dependencies>
+        <!-- Lombok para reduzir boilerplate -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Starter Web (opcional) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,7 +70,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!-- Informe aqui o nome completo da sua classe com o método main -->
+                    
                     <mainClass>br.com.ifba.SpringBootCursoApplication</mainClass>
                 </configuration>
             </plugin>
